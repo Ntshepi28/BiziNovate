@@ -1,200 +1,275 @@
-# BiziNovate – Tech Bootcamp Website
+# BiziNovate ICT Academy Website
 
-## 📌 Project Overview
+## About the Project
 
-BiziNovate is a startup tech business/bootcamp platform designed to empower aspiring technology professionals through structured learning programs in:
+This project is the official website for **BiziNovate ICT Academy NPC**, a South African non-profit organization dedicated to bridging the digital divide by providing digital literacy, information technology training, and entrepreneurship education to disadvantaged youth, women, and underserved communities.
 
-* Web Development
-* Cybersecurity
-* Software Engineering (Future Expansion)
-
-This website serves as the official online platform for marketing bootcamps, managing student registrations, and issuing certificates upon course completion.
-
-This is the MVP (Minimum Viable Product) version built using frontend technologies and deployed on Netlify.
+The website is designed to showcase the organization's impact, promote its educational programs, support student applications, encourage corporate partnerships, and strengthen BiziNovate's digital presence.
 
 ---
 
-## 🎯 Project Goals
+# Mission
 
-* Present BiziNovate as a professional tech startup
-* Display available bootcamps and pricing
-* Allow students to apply online
-* Provide a student login dashboard
-* Generate a downloadable certificate upon course completion
-* Deploy a live production-ready website
-* Also display events that is hosts 
+To bridge the digital divide by equipping youth, women, and underserved communities with future-ready digital skills, technical education, and entrepreneurial knowledge that create opportunities for employment, innovation, and economic growth.
 
 ---
 
-## 🛠️ Tech Stack
+# Vision
 
-Frontend:
+To become one of South Africa's leading technology academies, empowering communities through accessible digital education, industry partnerships, and innovation.
+
+---
+
+# Project Objectives
+
+The website aims to:
+
+* Showcase BiziNovate's mission and community impact.
+* Promote available technology training programmes.
+* Allow prospective students to apply online.
+* Attract corporate sponsors and strategic partners.
+* Highlight success stories and community outreach.
+* Provide an accessible, mobile-first experience for users across South Africa.
+* Serve as a scalable platform for future learning management features.
+
+---
+
+# Target Audience
+
+This platform is designed for multiple audiences, including:
+
+* Youth seeking technology education
+* Women entering the technology industry
+* Rural and township communities
+* Corporate sponsors and CSI managers
+* Educational institutions
+* Government organisations
+* Community partners
+* Volunteers and mentors
+
+---
+
+# Core Programmes
+
+BiziNovate offers technology and career development programmes including:
+
+## Digital Literacy
+
+* Computer Fundamentals
+* Internet Skills
+* Microsoft Office Essentials
+
+## Cybersecurity
+
+* Introduction to Cybersecurity
+* Network Security
+* Ethical Hacking Fundamentals
+
+## Networking
+
+* Cisco Networking Academy Programmes
+* CCNA Preparation
+
+## Programming
+
+* HTML
+* CSS
+* JavaScript
+* Python
+* Web Development Fundamentals
+
+## Artificial Intelligence & Data Science
+
+* AI Fundamentals
+* Data Science Foundations
+
+## Career Readiness
+
+* CV Writing
+* Interview Preparation
+* Entrepreneurship
+* Workplace Readiness
+
+---
+
+# Website Features
+
+## Public Website
+
+* Home Page
+* About Us
+* Programmes & Academy
+* Community Impact
+* Partner With Us
+* Donate
+* Contact Us
+
+---
+
+## Student Features (MVP)
+
+* Student Application Form
+* Student Login
+* Student Dashboard
+* Course Progress
+* Certificate Generation
+* Downloadable Certificate (PDF)
+
+---
+
+## Future Features
+
+* Student Authentication
+* Learning Management System (LMS)
+* Online Learning Modules
+* Assignment Submission
+* Quiz System
+* Instructor Dashboard
+* Admin Dashboard
+* Certificate Verification
+* Online Payments
+* Email Notifications
+* Blog & News
+* Volunteer Portal
+* Event Registration
+
+---
+
+# Technology Stack
+
+## Frontend
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla JS)
+* JavaScript (Vanilla)
 
-Deployment:
+## Deployment
 
 * Netlify
 
-Additional Library:
+## Version Control
 
-* html2pdf.js (for certificate PDF generation)
+* Git
+* GitHub
 
----
+## Future Technologies
 
-## 📁 Project Structure
-
-```
-/index.html          → Home Page
-/about.html          → About Page
-/bootcamps.html      → Courses Page
-/pricing.html        → Pricing Page
-/apply.html          → Application Form
-/login.html          → Student Login
-/dashboard.html      → Student Dashboard
-/certificate.html    → Certificate Page
-
-/css/                → Stylesheets
-/js/                 → JavaScript files
-/images/             → Images and assets
-```
+* Firebase or Supabase
+* Node.js / Express
+* SQL Database
+* Payment Gateway Integration
 
 ---
 
-## 🚀 Features
+# Project Structure
 
-### 🌐 Public Pages
+```text
+bizinovate/
+│
+├── index.html
+├── about.html
+├── programmes.html
+├── impact.html
+├── partners.html
+├── donate.html
+├── apply.html
+├── login.html
+├── dashboard.html
+├── certificate.html
+├── contact.html
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   ├── icons/
+│   ├── logos/
+│   └── certificates/
+│
+├── README.md
+└── LICENSE
+```
 
-* Professional landing page
-* Founder spotlight section
-* Bootcamp overview
-* Pricing table
+---
+
+# Design Principles
+
+The website will follow these principles:
+
+* Mobile-first development
 * Responsive design
-* Call-to-action sections
-
-### 📝 Application System
-
-* Student application form
-* Form validation
-* Confirmation message
-
-### 🔐 Student Login (MVP)
-
-* Simulated authentication using localStorage
-* Student session handling
-* Dashboard access
-
-### 📊 Student Dashboard
-
-* Displays student name and enrolled course
-* Course completion simulation
-* "Mark as Complete" functionality
-* show in progress course
-
-### 🎓 Certificate System
-
-* Dynamically generates certificate using:
-
-  * Student Name
-  * Course Name
-  * Unique Certificate ID
-* Downloadable as PDF using html2pdf.js
+* Accessibility (WCAG best practices)
+* Lightweight and fast loading
+* Clean, modern user interface
+* Low-data usage for mobile users
+* Professional branding
+* Scalable architecture
 
 ---
 
-## 📄 Certificate Logic (MVP)
+# Team Responsibilities
 
-Since this version does not include a backend or database:
+## Developer 1
 
-* Student data is stored in localStorage
-* Completion is simulated via dashboard button
-* Certificate is generated dynamically on the frontend
-* Certificate ID format example:
-
-  ```
-  BZN-2026-WD-0001
-  ```
-
-⚠️ Note: This certificate system is for MVP purposes only and is not secure for production-level verification.
-
----
-
-## 👥 Team Responsibilities
-
-### Developer 1 – System & Logic
-
+* HTML structure
 * JavaScript functionality
-* Login system
-* Dashboard logic
+* Student application system
+* Dashboard
 * Certificate generation
-* Deployment setup
+* Deployment
 
-### Developer 2 – UI/UX & Design
+## Developer 2
 
-* Layout design
-* Branding and color palette
-* Responsive styling
-* Certificate visual design
+* UI/UX Design
+* CSS styling
+* Responsive layouts
+* Branding
+* Graphics and assets
 * User experience improvements
 
 ---
 
-## 📅 Development Timeline
+# Development Roadmap
 
-### Week 1
+## Phase 1 – Website MVP
 
-* Page structure completed
-* Styling finalized
-* Responsive design implemented
-
-### Week 2
-
-* Login system completed
-* Dashboard functionality implemented
-* Certificate generation working
+* Project setup
+* Responsive layout
+* Home page
+* About page
+* Programmes page
+* Community Impact page
+* Partner page
+* Contact page
+* Student application form
+* Student dashboard
+* Certificate generation
 * Deployment to Netlify
 
 ---
 
-## 🔮 Future Improvements (Phase 2)
+## Phase 2 – Learning Platform
 
-* Backend integration (Node.js / Firebase / Supabase)
-* Secure authentication system
-* Database for storing students
+* Authentication
+* Database integration
+* Online learning portal
+* Video lessons
+* Assignment management
+* Progress tracking
 * Admin dashboard
-* Certificate verification system
-* Online payment integration
-* Course progress tracking
-* Video learning modules
+* Certificate verification
+* Online payments
 
 ---
 
-## 🌟 Vision
+# Long-Term Goal
 
-BiziNovate aims to become a leading tech bootcamp platform that prepares students for real-world technology careers through hands-on learning and practical experience.
-
----
-
-## 📢 Status
-
-Current Version: MVP
-Deployment: Netlify
-Project Type: Startup Website
+BiziNovate ICT Academy aims to become a trusted technology education hub that empowers communities through digital skills, industry partnerships, entrepreneurship, and innovation, helping create sustainable opportunities across South Africa.
 
 ---
 
-## 📬 Contact
+# License
 
-For business inquiries, partnerships, or enrollment information, please contact BiziNovate through the official website contact form.
+This project is being developed for **BiziNovate ICT Academy NPC**.
 
----
-
-© 2026 BiziNovate. All Rights Reserved.
-
-
-## Coming later on ...
-
-This whole website will be updated by including the backend also the database so that the information of the customers/student can be stored
-and saved
+All rights reserved unless otherwise specified.
