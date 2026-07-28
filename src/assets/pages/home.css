@@ -1,0 +1,330 @@
+/* ==========================================
+   HOME PAGE
+========================================== */
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+#hero {
+    background: linear-gradient(135deg, #F8FAFC 0%, #EEF4FF 100%);
+    overflow: hidden;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+
+    min-height: calc(100vh - 80px);
+    padding: 4rem 0;
+}
+
+/* ==========================================
+   HERO CONTENT
+========================================== */
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 0.6rem 1.2rem;
+
+    background: rgba(10, 61, 145, 0.1);
+
+    color: var(--color-primary);
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+.hero__title {
+    font-size: clamp(3rem, 5vw, 4.8rem);
+    font-weight: 700;
+    line-height: 1.1;
+
+    color: var(--color-black);
+}
+
+.hero__description {
+    max-width: 600px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: var(--color-text);
+}
+
+/* ==========================================
+   HERO BUTTONS
+========================================== */
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero__image {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__image::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 380px;
+    height: 380px;
+
+    background: rgba(247, 148, 29, 0.12);
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    z-index: -1;
+}
+
+.hero__image img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+    transition: transform 0.4s ease;
+}
+
+.hero__image img:hover {
+    transform: scale(1.03);
+}
+
+/* ==========================================
+   SHARED SECTION STYLES
+========================================== */
+
+.section-heading {
+    max-width: 760px;
+
+    margin: 0 auto 4rem;
+
+    text-align: center;
+}
+
+.section-subtitle {
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    margin-bottom: 1rem;
+
+    background: rgba(10, 61, 145, 0.1);
+
+    color: var(--color-primary);
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.section-title {
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+/* ==========================================
+   STATISTICS SECTION
+========================================== */
+
+#statistics {
+    padding: 5rem 0;
+    background: var(--color-light);
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-card { 
+    background: var(--color-white); 
+    padding: 2.5rem 2rem; 
+    text-align: center; 
+    border: 1px solid var(--color-border); 
+    border-top: 5px solid var(--color-primary); 
+    border-radius: var(--radius-md); 
+    box-shadow: var(--shadow); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-card__number {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-weight: 700;
+
+    color: var(--color-primary);
+
+    margin-bottom: 0.5rem;
+}
+
+.stat-card__title {
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: var(--color-text);
+}
+
+/* ==========================================
+   ABOUT PREVIEW
+========================================== */
+
+#about-preview {
+    padding: 5rem 0;
+}
+
+/* ==========================================
+   FEATURED PROGRAMMES
+========================================== */
+
+#featured-programmes {
+    padding: 5rem 0;
+}
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+#testimonials {
+    padding: 5rem 0;
+}
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+#call-to-action {
+    padding: 5rem 0;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 992px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+
+        text-align: center;
+    }
+
+    .hero__content {
+        align-items: center;
+    }
+
+    .hero__description {
+        max-width: 700px;
+    }
+
+    .hero__buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero__image {
+        order: -1;
+    }
+
+    .hero__image img {
+        max-width: 450px;
+    }
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        padding: 3rem 0;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+    }
+
+    .hero__buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero__buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero__image img {
+        max-width: 100%;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        margin-bottom: 3rem;
+    }
+}

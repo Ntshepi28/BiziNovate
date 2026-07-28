@@ -177,16 +177,32 @@ bizinovate/
 ├── dashboard.html
 ├── certificate.html
 ├── contact.html
+├── 404.html
 │
 ├── assets/
 │   ├── css/
+|   |   ├── style.css
+│   │   ├── variables.css
+│   │   ├── reset.css
+│   │   ├── typography.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   ├── utilities.css
+│   │   ├── responsive.css
 │   ├── js/
+|   ├── data/
+|   ├── fonts/
+|   ├── pages/
 │   ├── images/
 │   ├── icons/
 │   ├── logos/
 │   └── certificates/
+├── components/
+│   ├── navbar.html
+│   └── footer.html
 │
 ├── README.md
+├── .gitignore
 └── LICENSE
 ```
 
