@@ -627,6 +627,86 @@
 }
 
 /* ==========================================
+   GET INVOLVED
+========================================== */
+
+#get-involved {
+    background: var(--color-white);
+}
+
+.get-involved {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.get-involved__content .section-title {
+    margin-bottom: 1rem;
+}
+
+.get-involved__content .section-description {
+    margin-bottom: 2rem;
+}
+
+.get-involved__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.involve-card {
+    background: var(--color-light);
+
+    padding: 2rem;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow);
+
+    transition: all .3s ease;
+
+    text-align: center;
+}
+
+.involve-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.involve-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 1.5rem;
+
+    background: rgba(10, 61, 145, .08);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.involve-card h3 {
+    margin-bottom: .8rem;
+
+    color: var(--color-primary);
+
+    font-size: 1.2rem;
+}
+
+.involve-card p {
+    color: var(--color-text);
+
+    line-height: 1.7;
+}
+
+/* ==========================================
    RESPONSIVE DESIGN
 ========================================== */
 
@@ -689,6 +769,14 @@
     .partners-grid {
        grid-template-columns: repeat(2, 1fr);
     }
+
+    .get-involved {
+       grid-template-columns: 1fr;
+    }
+
+    .get-involved__cards {
+       grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -742,6 +830,14 @@
 
     .partners-cta h3 {
       font-size: 1.6rem;
+    }
+
+    .get-involved__cards {
+       grid-template-columns: 1fr;
+    }
+
+    .get-involved {
+       text-align: center;
     }
 }
 
